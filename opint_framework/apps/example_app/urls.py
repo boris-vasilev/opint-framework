@@ -10,6 +10,6 @@ router.register(r'sample', SampleViewSet)
 urlpatterns = [
 
     # Could be accessed as http://127.0.0.1:8000/example_app/api/
-    path("home", SampleViewSet.index, name='index'),
+    path("home", SampleViewSet.index, name='sample-home'),
     path('', include(router.urls)),
 ]

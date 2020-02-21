@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from opint_framework.apps.example_app.models import SampleModel
+from opint_framework.apps.example_app.models import Sample
 
 
 class SampleSerializer(serializers.ModelSerializer):
     class Meta:
-        model = SampleModel
+        model = Sample
         fields = ['id', 'sample_message']
